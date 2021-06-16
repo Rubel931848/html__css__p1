@@ -445,6 +445,11 @@ footer{}
 /* responsive code start */
 
  @media screen and (max-width:1024px){   /*ipad-pro Divice */
+
+    html{
+        font-size:90%;
+    }
+
     .header__hero{
         height: 45vh;
     }
@@ -471,6 +476,12 @@ footer{}
 
 
 @media screen and (max-width:768px){   /*ipad Divice */
+   
+   
+    html{
+        font-size:80%;
+    }
+   
     .header__nav__manu{
         display: none;
     }
@@ -500,6 +511,10 @@ footer{}
 }
 
 @media screen and (max-width:414px){   /*i phone 6,7,8 plus */
+    
+    html{
+        font-size:70%;
+    }
     .header__nav{
         padding:0rem 2rem;
     }
