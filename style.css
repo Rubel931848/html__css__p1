@@ -1,0 +1,610 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style-type: none ;
+}
+
+/* header section css */
+    /* header nav part css */
+.header{
+
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    padding:0rem 5rem;
+    position: fixed;
+    left:0;
+    right: 0;
+    /* box-shadow: 0px 0.1px 0.5px rgba(0, 0, 0, 0.5); */
+    z-index: 999999;
+    background: #fbfefdf6;
+}
+
+.header__nav__logo{
+    flex-basis: 5%;
+}
+.header__nav__logo p{
+    font-size:1.2rem;
+    color:#6f6d6d;
+    transition:0.3s;
+}
+.header__nav__logo p:hover{
+    color:#069c54;
+    cursor: pointer;
+}
+.header__nav__manu{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav__manu li a{
+    color:#6f6d6d;
+    font-size: 1.1rem;
+    transition:0.3s;
+}
+.header__nav__manu li a:hover{
+    color:#069c54;
+}
+
+    /* header hero part css */
+.header__hero{
+    width: 75%;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.header__hero > *{
+    flex-basis: 100%;
+}
+.header__hero__leftSide h1{
+    font-size: 4rem;
+    color:#069c54;
+    line-height: 1.5;
+}
+.header__hero__leftSide h2{
+    font-size: 2.25rem;
+    color:#393939;
+    line-height: 1.5;
+}
+.header__hero__leftSide .btn{
+    display: inline-block;
+    background: #069c54;
+    color:white;
+    font-size: 1.125rem;
+    padding:1rem 1.625rem;
+    margin-top: 1rem;
+    border-radius:0.625rem;
+    transition:0.2s;
+}
+.header__hero__leftSide .btn:hover{
+    background: #06914e;
+}
+
+.header__hero__rightSide img{
+    width:100%;
+    height:100%;
+}
+
+/* about section markup */
+
+.about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.about__wraper{
+    width:80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3rem 0;
+}
+.about__wraper > *{
+    flex-basis: 100%;
+}
+
+.about__left img{
+    width:85%;
+    height:80% ;
+    border-radius: 1rem;
+}
+.about__right h4{
+    font-size: 1.2rem;
+    color:#1da363;
+    line-height: 1.5;
+}
+.about__right h2{
+    font-size: 2.25rem;
+    color:#393939;
+    line-height: 1.2;
+    margin:1rem 0;
+}
+.about__right p{
+    color:#707070;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+.about__right .btn{
+    display:inline-block;
+    padding:0.75rem 1.375rem;
+    background: #069c54;
+    color:#fff;
+    margin:1rem 0;
+    border-radius: 0.625rem;
+    font-size: 1.2rem;
+    transition:0.3s;
+}
+.about__right .btn:hover{
+    background: #058145;
+}
+
+/* services section design */
+.services{
+   padding:6rem 0;
+}
+.services__title{
+    text-align: center;
+}
+.services__title h5{
+    font-size: 1.2rem;
+    color:#089d56;
+    line-height: 1.5;
+}
+.services__title h2{
+    line-height: 1.3;
+    color:#393939;
+    font-size: 2.25rem;
+}
+
+.services__elemants{
+    width: 80%;
+    margin:4rem auto;
+    display: flex;
+    flex-wrap: wrap;
+	justify-content:space-between;
+    gap:0%;
+}
+.services__elemants > *{
+    width:15rem;
+}
+.services__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__img{
+    width: 4rem;
+    height: 4rem;
+    fill: rgb(5, 153, 5);
+    margin-bottom: 2rem;
+  }
+  .services__box .textArea{
+      text-align: center;
+      line-height: 1.5;
+    }
+ .textArea h3{
+      color:#393939;
+      font-size: 1.2rem;
+      
+  }
+  .textArea p{
+      color:#8f9090;
+  }
+
+  /* special food section design */
+  .specialFood{
+      padding:4rem 0;
+    background:#fbfefd;
+}
+.specialFood__wraper{
+    width:65%;
+    margin:auto;
+
+}
+  .specialFood__title{
+      text-align: center;
+  }
+  .specialFood__title p{
+      font-size: 1.2rem;
+      color:#15a25f;
+      line-height: 1.5;
+  }
+
+  .specialFood__title h2{
+      color:#393939;
+      font-size: 2.5rem;
+      line-height: 1.5;
+  }
+
+  .specialFood__card{
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap:4rem;
+  }
+  .specialFood__card > *{
+      /* flex-basis: 100%; */
+      width: 13.75rem;
+      height: 18.75rem;
+      padding:1rem;
+      border-radius: 0.625rem;
+      box-shadow:0.0625rem 0.0625rem 0.625rem rgb(219, 217, 217);
+  }
+  .food__card > :nth-child(1){
+      height: 65%;
+      width: 100%;
+      position: relative;
+  }
+  .food__card .imgArea img{
+      width: 80%;
+      height: auto;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+  }
+  .food__card > :nth-child(2){
+    height: 40%;
+    width: 100%;
+}
+.food__card .food_text_area h3{
+    font-size: 1.2rem;
+    color:#393939;
+    line-height: 1.5;
+}
+.food__card .food_text_area p{
+    font-size: 1rem;
+    color:#393939;
+    line-height: 1.5;
+}
+.food__card .food_text_area p:nth-of-type(2){
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.food__card{
+    position: relative;
+}
+
+.food__card a{
+    height: 1.25rem;
+    width: 1.875rem;
+    background:green;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    border-radius: 0.625rem 0rem 0.625rem 0rem;
+    cursor: pointer;
+}
+
+/* app part design */
+
+.app{
+    background: #ffffff;
+}
+.app__wraper{
+    width: 75%;
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.app__leftSide{
+    flex-basis: 60%;
+}
+.app__leftSide img{
+    width:80%;
+    height: auto;
+}
+.app__rightSide{
+    flex-basis: 40%;
+}
+.app__rightSide > p:nth-of-type(1){
+    font-size: 1.2rem;
+    color:#1ea565;
+    line-height: 1.5;
+}
+.app__rightSide h2{
+    font-size: 2.25rem;
+    color:#393939;
+    margin:1rem 0;
+}
+.app__rightSide > p:nth-of-type(2){
+    font-size: 1.2rem;
+    color:#8e8f8e;
+    line-height: 1.3;
+}
+
+
+.app__rightSide .img_btn{
+    width: 100%;
+    margin-top:2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.img_btn > *{
+    flex-basis: 100%;
+}
+.img_btn img{
+    width:90%;
+    height: auto;
+}
+
+
+/* contuct section design */
+
+.contuct{
+    background:;
+	margin-bottom:3rem;
+}
+.contuct__wraper{
+    width: 83%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contuct__leftside{
+    flex-basis: 60%;
+}
+.contuct__rightside{
+    flex-basis: 30%;
+}
+.contuct__leftside p:nth-of-type(1){
+    font-size: 1.2rem;
+    color:rgb(5, 153, 5);
+    line-height: 1.5;
+}
+.contuct__leftside p:nth-of-type(2){
+    font-size: 1.1rem;
+    color:#818282;
+    line-height: 1.3;
+}
+.contuct__leftside h2{
+    font-size: 2.5rem;
+    color:#393939;
+    margin:1rem 0;
+}
+
+.contuct__rightside .btn{
+	display:inlie-block;
+    padding:1rem 1.3rem;
+    background: #069c54;
+    color:#fff;
+    border-radius: 0.625rem;
+	text-align:center;
+}
+
+.contuct__rightside .btn:hover{
+    background: #058346;
+}
+
+/* footer part design */
+
+footer{}
+
+.footer__top{
+
+}
+.footer__box__wraper{
+    width:85%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:3rem;
+}
+.footer__box__wraper > *{
+    flex-basis: 20%;
+}
+.footer__box h3 a{
+    color:rgb(5, 153, 5);
+}
+.footer__box h3{
+    font-size: 1.2rem;
+    color:#393939;
+    margin-bottom: 1rem;
+}
+.footer__box a,li{
+    display: block;
+    color:#707070;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color:#707070;
+    transition: 0.3s;
+}
+
+
+.footer__bottom p{
+    padding:2.25rem 0;
+    text-align: center;
+    color:#707070;
+}
+
+.footer__box a:hover,.footer__box li:hover{
+    margin-left:0.5rem;
+}
+
+/* responsive code start */
+
+ @media screen and (max-width:1024px){   /*ipad-pro Divice */
+    .header__hero{
+        height: 45vh;
+    }
+    
+.about{
+    height: 45vh;
+}
+.about__wraper{
+    padding:0rem 0;
+}
+.services{
+    padding:0rem 0rem;
+}
+
+.specialFood__wraper{
+    width:80%;
+    margin:auto;
+
+}
+.contuct{
+    height: 40vh;
+}
+}
+
+
+@media screen and (max-width:768px){   /*ipad Divice */
+    .header__nav__manu{
+        display: none;
+    }
+    .header__hero{
+        height: 50vh;
+        width: 90%;
+    }
+    .about__wraper{
+        width:95%;
+    }
+    .services__elemants{
+        width:90%;
+    }
+    .specialFood__wraper{
+        width:100%;
+    }
+    .specialFood__card{
+        gap:3rem;
+    }
+    .app__wraper{
+        width: 90%;
+    }
+    .footer__top{
+        width:100%;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width:414px){   /*i phone 6,7,8 plus */
+    .header__nav{
+        /* position:relative; */
+    }
+    .header__hero{
+        flex-direction: column;
+        height: 90vh; 
+        position: relative;
+        top:72px;       
+    }
+    .header__hero__rightSide{
+        width:80%;
+    }
+    .header__hero__rightSide img{
+        width: 100%;
+        height: auto;
+    }
+    .about{
+        height: auto;
+    }
+    .about__wraper{
+    flex-direction: column-reverse;
+    }
+    .about__right{
+        text-align: center;
+        padding:4rem 0rem;
+    }
+    .about__left{
+        width: 90%;
+        margin:auto;
+        padding-bottom: 3rem;;
+    }
+    .about__left img{
+      width: 100%;
+      height: auto;
+    }
+
+    .services__elemants{
+        width: 100%;
+        margin:1rem auto;
+      
+    }
+    .services__box{
+        width: 80%;
+        margin:1rem auto;
+    }
+
+    .app{
+    
+    }
+    .app__wraper{
+        flex-direction: column-reverse;
+    }
+    .app__rightSide{
+        text-align: center;
+        padding:2rem 0;
+    }
+    .app__leftSide{
+        width:80%;
+        margin:auto;
+    }
+    .app__leftSide img{
+        width:100%;
+    }
+    .contuct{
+        height: 40vh;
+    }
+    .contuct__wraper{
+       flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        align-items: ;
+    }
+
+    .contuct__wraper > :nth-child(1){
+        padding:2rem 0;
+
+    }
+
+    .footer__box__wraper{
+        width:90%;
+        margin:auto;
+        
+    }
+
+    .footer__box{
+        flex-basis: 50%;
+       margin:0.5rem 0;
+    }
+    
+.footer__box__wraper{
+    gap:0rem;
+}
+
+}
+
+@media screen and (max-width:375px){   /*i phone 6,7,8 */
+
+}
+
+@media screen and (max-width:320px){   /*i phone 5 */
+
+}
+
+@media screen and (max-width:280px){   /*galaxy fold*/
+    html{
+        font-size: 70%;
+    }
+}
