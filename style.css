@@ -501,7 +501,11 @@ footer{}
 
 @media screen and (max-width:414px){   /*i phone 6,7,8 plus */
     .header__nav{
-        /* position:relative; */
+        padding:0rem 2rem;
+    }
+    
+    .header__nav__logo{
+        flex-basis: 100%;
     }
     .header__hero{
         flex-direction: column;
